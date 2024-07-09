@@ -80,7 +80,7 @@ async def main():
             now_beijing = format_to_iso(datetime.utcnow() + timedelta(hours=8))
             success_message = f'serv00账号 {username} 于北京时间 {now_beijing}（UTC时间 {now_utc}）登录成功！'
             print(success_message)
-            send_telegram_message(success_message)
+            ##send_telegram_message(success_message)
         else:
             print(f'serv00账号 {username} 登录失败，请检查serv00账号和密码是否正确。')
 
